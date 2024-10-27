@@ -11,4 +11,19 @@ def home(request):
 
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=b452b74fd5752f39aad48dfce90e2b08'
     PARAMS = {'units':'metric'}
-    return render(request,'index.html') # Render the home.html template
+
+    data = requests.get(url,PARAMS).json()
+
+    description = data['weather'][0]['description']
+    icon = data['weather'][0]['icon']
+    temp = data['weather'][0]['temp']
+
+    day = datetime.date.today()
+
+
+
+
+
+
+
+    return render(request,'index.html',{'description':description,'icon':icon,'temp':temp,'day':day}) 
