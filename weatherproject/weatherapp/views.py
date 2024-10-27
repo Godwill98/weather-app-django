@@ -16,7 +16,7 @@ def home(request):
 
     description = data['weather'][0]['description']
     icon = data['weather'][0]['icon']
-    temp = data['weather'][0]['temp']
+    temp = data['main'] ['temp']
 
     day = datetime.date.today()
 
@@ -26,4 +26,4 @@ def home(request):
 
 
 
-    return render(request,'index.html',{'description':description,'icon':icon,'temp':temp,'day':day}) 
+    return render(request,'index.html',{'description':description,'icon':icon,'temp':temp,'day':day,'city':city}) 
