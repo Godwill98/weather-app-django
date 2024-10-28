@@ -9,7 +9,7 @@ def home(request):
     else:
         city = 'indore'
 
-    url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=b452b74fd5752f39aad48dfce90e2b08'
+    url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={enter you open weather api key minise the curly brackets}'
     PARAMS = {'units':'metric'}
 
     data = requests.get(url,PARAMS).json()
