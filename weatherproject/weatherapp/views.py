@@ -7,7 +7,7 @@ def home(request):
     if 'city' in request.POST:
         city = request.POST['city']
     else:
-        city = 'Kolkata'
+        city = 'indore'
 
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=b452b74fd5752f39aad48dfce90e2b08'
     PARAMS = {'units':'metric'}
