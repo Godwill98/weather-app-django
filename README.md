@@ -71,10 +71,4 @@ A simple and intuitive weather app that fetches the current weather information 
 1. Enter "Kisumu" in the search box.
 2. The app displays the temperature, weather description, and an icon representing the weather in Kisumu.
 
-## License
 
-This project is licensed under the MIT License.
-
----
-
-Feel free to customize the `README.md` further based on your project specifics! Let me know if you need additional sections.
