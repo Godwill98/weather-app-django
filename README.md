@@ -1,12 +1,9 @@
-Here's a sample `README.md` file for your weather app project:
-
----
 
 # Weather App 🌤️
 
-A simple and intuitive weather app that fetches the current weather information of any city/town using the OpenWeatherMap API. Enter a city name and instantly get the temperature, weather description, and an icon representing the weather.
+A simple and intuitive weather app that fetches the current weather information of any city/town using the OpenWeatherMap API. Enter a city or town name and instantly get the temperature, weather description, and an icon representing the weather.
 
-![Weather App Screenshot](weatherapp.jpg)
+![Weather App Screenshot](weatherproject/static/weatherapp22.png)
 
 ## Features
 
