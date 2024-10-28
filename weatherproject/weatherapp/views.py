@@ -26,4 +26,4 @@ def home(request):
 
 
 
-    return render(request,'index.html',{'description':description,'icon':icon,'temp':temp,'day':day,'city':city}) 
+    return render(request,'weatherapp/index.html',{'description':description,'icon':icon,'temp':temp,'day':day,'city':city}) 
