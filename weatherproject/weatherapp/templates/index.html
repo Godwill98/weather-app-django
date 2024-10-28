@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Weather App</h1>
+    </div>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="" placeholder="Enter city name">
+        <button type="submit">Search</button>
+    </form>
+    <div class="weather">
+        <div class="left">
+            <h2>{{ temp }}&#176;</h2>
+            <h3>{{ city }}</h3>
+        </div>
+        <div class="right">
+            <h2>{{ weather }}</h2>
+            <h3>{{ description }}</h3>
+
+    </div>
     
 </body>
 </html>
